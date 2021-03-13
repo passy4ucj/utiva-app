@@ -1,9 +1,19 @@
 import React from 'react'
+import { Container } from 'react-bootstrap'
 import './App.css';
+import Header from './components/Header';
+import CasesScreen from './screens/CasesScreen';
 
 function App() {
   return (
-    <h1>This is a Test</h1>
+    <>
+      <Header />
+      <main className='py-3'>
+        <Container>
+          <CasesScreen />
+        </Container>
+      </main>
+    </>
   );
 }
 
